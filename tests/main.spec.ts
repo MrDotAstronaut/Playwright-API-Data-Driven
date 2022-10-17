@@ -10,7 +10,7 @@ let task_effective_number;
 
 test.beforeAll(async ({ baseURL, extraHTTPHeaders }) => {
   apiContext = await request.newContext({ baseURL, extraHTTPHeaders });
-  apiContext.on('console', msg => console.log(msg.text())); 
+  apiContext.on('console', msg => console.log(msg.text()));
   apiUtils = new APIUtils(apiContext);
 });
 
