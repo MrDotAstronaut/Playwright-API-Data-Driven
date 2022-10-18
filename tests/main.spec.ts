@@ -6,7 +6,9 @@ let apiUtils;
 let sys_id;
 let task_effective_number;
 
-test.beforeAll(async ({ request }) => apiUtils = new APIUtils(request));
+test.beforeAll(async ({ request }) => {
+  apiUtils = new APIUtils(request);
+});
 
 for (const data of testData) {
 
